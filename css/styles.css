@@ -6,6 +6,7 @@
   --card-border: rgba(255, 255, 255, 0.08);
   --accent: #a78bfa;
   --accent-soft: #c4b5fd;
+  --text-muted: #cbd5e1;
 }
 
 * {
@@ -95,4 +96,25 @@ body {
 
 .card li {
   margin-bottom: 6px;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent-soft);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
