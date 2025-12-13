@@ -46,29 +46,22 @@ body {
   margin: -70px auto 60px;
   padding: 0 20px;
   display: grid;
-  gap: 28px;
+  gap: 26px;
 }
 
 .card {
   background: var(--card-bg);
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--card-border);
   padding: 28px;
   border-radius: 18px;
   box-shadow: 0 18px 45px rgba(0,0,0,0.6);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.75);
 }
 
 .card h2 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 750;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -77,22 +70,15 @@ body {
   position: absolute;
   left: 0;
   bottom: -6px;
-  width: 36px;
+  width: 32px;
   height: 3px;
   border-radius: 3px;
   background: linear-gradient(90deg, var(--accent), var(--accent-soft));
 }
 
-.card h3 {
-  margin-top: 18px;
-  margin-bottom: 8px;
-  font-size: 1.05rem;
-  color: var(--accent-soft);
-}
-
 .card p,
 .card li {
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255,255,255,0.85);
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -106,27 +92,21 @@ body {
 }
 
 .portfolio {
-  border: 1px solid rgba(167,139,250,0.35);
-}
-
-.cv {
-  grid-column: span 2;
+  box-shadow: 0 25px 70px rgba(167,139,250,0.25);
 }
 
 .boton {
-  display: inline-block;
-  margin-top: 18px;
+  margin-top: 16px;
   padding: 10px 22px;
   background-color: var(--accent);
   color: #020617;
-  text-decoration: none;
+  border: none;
   border-radius: 12px;
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .boton:hover {
-  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(167,139,250,0.45);
 }
 
@@ -150,4 +130,12 @@ footer {
   .contenedor {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cv {
+    grid-column: span 2;
+  }
+}
+
+.oculto {
+  display: none;
 }
