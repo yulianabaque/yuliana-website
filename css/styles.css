@@ -46,7 +46,7 @@ body {
   margin: -70px auto 60px;
   padding: 0 20px;
   display: grid;
-  gap: 26px;
+  gap: 28px;
 }
 
 .card {
@@ -66,9 +66,9 @@ body {
 }
 
 .card h2 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 750;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   position: relative;
 }
 
@@ -77,15 +77,22 @@ body {
   position: absolute;
   left: 0;
   bottom: -6px;
-  width: 32px;
+  width: 36px;
   height: 3px;
   border-radius: 3px;
   background: linear-gradient(90deg, var(--accent), var(--accent-soft));
 }
 
+.card h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: var(--accent-soft);
+}
+
 .card p,
 .card li {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -98,9 +105,17 @@ body {
   margin-bottom: 6px;
 }
 
+.portfolio {
+  border: 1px solid rgba(167,139,250,0.35);
+}
+
+.cv {
+  grid-column: span 2;
+}
+
 .boton {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 18px;
   padding: 10px 22px;
   background-color: var(--accent);
   color: #020617;
@@ -129,4 +144,10 @@ footer {
   padding: 20px;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
