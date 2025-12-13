@@ -16,3 +16,26 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
+
+.hero {
+  color: #020617;
+  text-align: center;
+  padding: 70px 20px 110px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.hero p {
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+.contenedor {
+  margin: -70px auto 60px;
+  padding: 0 20px;
+  display: grid;
+  gap: 26px;
+}
