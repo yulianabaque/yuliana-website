@@ -18,6 +18,7 @@ body {
 }
 
 .hero {
+  background: linear-gradient(135deg, #b9a7ff, #9f8cff);
   color: #020617;
   text-align: center;
   padding: 70px 20px 110px;
@@ -26,16 +27,58 @@ body {
 .hero h1 {
   font-size: 2.6rem;
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .hero p {
   margin-top: 8px;
   font-size: 1.05rem;
+  opacity: 0.75;
 }
 
 .contenedor {
+  max-width: 1100px;
   margin: -70px auto 60px;
   padding: 0 20px;
   display: grid;
   gap: 26px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 28px;
+  border-radius: 18px;
+}
+
+.card:hover {
+  box-shadow: 0 24px 60px rgba(0,0,0,0.75);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: 750;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.card h2::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.card p,
+.card li {
+  font-size: 0.95rem;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 6px;
 }
