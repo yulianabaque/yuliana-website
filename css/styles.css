@@ -1,3 +1,9 @@
+:root {
+  --bg-main: #05060a;
+  --bg-soft: #0b0f1a;
+  --text: #f9fafb;
+}
+
 * {
   margin: 0;
   padding: 0;
