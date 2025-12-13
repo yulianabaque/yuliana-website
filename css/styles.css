@@ -71,7 +71,6 @@ body {
   position: relative;
 }
 
-
 .card h2::after {
   content: "";
   position: absolute;
