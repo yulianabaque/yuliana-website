@@ -16,7 +16,6 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   background: linear-gradient(180deg, var(--bg-main), var(--bg-soft));
   color: var(--text);
   line-height: 1.6;
@@ -67,7 +66,7 @@ body {
 
 .card p,
 .card li {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.93);
   font-size: 15px;
   line-height: 1.7;
 }
@@ -96,11 +95,12 @@ body {
 }
 
 a {
-  color: var(--accent-soft);
+  color: var(--text);
   text-decoration: none;
 }
 
 a:hover {
+  color: #9f8cff;
   text-decoration: underline;
 }
 
@@ -144,9 +144,8 @@ footer {
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid var(--card-border);
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255,255,255,0.9);
   color: var(--text);
-  font-family: inherit;
 }
 
 .form-contacto input:focus,
