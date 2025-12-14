@@ -32,13 +32,12 @@ body {
 .hero h1 {
   font-size: 42px;
   font-weight: 800;
-  letter-spacing: -0.5px;
 }
 
 .hero p {
   margin-top: 8px;
   font-size: 17px;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 .contenedor {
@@ -65,9 +64,7 @@ body {
   position: relative;
 }
 
-.card p,
-.card li {
-  color: rgba(255,255,255,0.93);
+.card p, .card li {
   font-size: 15px;
   line-height: 1.7;
 }
@@ -112,16 +109,6 @@ footer {
   color: var(--text-muted);
 }
 
-@media (min-width: 768px) {
-  .contenedor {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cv {
-    grid-column: span 2;
-  }
-}
-
 .oculto {
   display: none;
 }
@@ -136,21 +123,27 @@ footer {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  color: var(--text-muted);
 }
 
-.form-contacto input,
-.form-contacto textarea {
+.form-contacto input, .form-contacto textarea {
   margin-top: 6px;
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid var(--card-border);
   background-color: rgba(255,255,255,0.9);
-  color: var(--text);
 }
 
-.form-contacto input:focus,
-.form-contacto textarea:focus {
+.form-contacto input:focus, .form-contacto textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color:  #7c3aed;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cv {
+    grid-column: span 2;
+  }
 }
