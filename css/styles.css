@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   background: linear-gradient(180deg, var(--bg-main), var(--bg-soft));
   color: var(--text);
   line-height: 1.6;
@@ -80,7 +81,7 @@ body {
 }
 
 .boton {
-  margin-top: 16px;
+  margin: 16px 0 25px 0;
   padding: 10px 22px;
   background-color: var(--accent);
   color: #020617;
