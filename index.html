@@ -45,7 +45,7 @@
 
       <button class="boton" id="toggleCV">Mostrar / Ocultar detalles</button>
 
-      <div id="cvDetalles">
+      <div id="cvDetalles" class="oculto">
 
         <h3>Formación</h3>
         <ul>
@@ -73,15 +73,33 @@
 
     <section class="card contacto">
       <h2>Contacto</h2>
-      <p>Email: <a href="mailto:giulianabaque@gmail.com">giulianabaque@gmail.com</a></p>
-      <p>
+
+      <form class="form-contacto">
+        <label>
+          Nombre
+          <input type="text" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" required>
+        </label>
+
+        <label>
+          Mensaje
+          <textarea rows="4" required></textarea>
+        </label>
+
+        <button class="boton" type="submit">Enviar</button>
+      </form>
+
+      <p style="margin-top: 16px;">
         GitHub:
         <a href="https://github.com/yulianabaque/yuliana-website" target="_blank">
           github.com/yulianabaque
         </a>
       </p>
-    </section>
-
+   </section>
   </main>
 
   <footer>
