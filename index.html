@@ -14,28 +14,34 @@
 
 <body>
 
-  <!-- HERO -->
+  <!-- HERO / AGENT SCREEN -->
   <header class="hero">
     <div class="hero-caja">
       <div class="hero-contenido">
 
         <div class="hero-texto">
+          <span class="agent-label">AGENT</span>
           <h1>Giuliana Baque</h1>
 
-          <h2>
-            <span class="rol">Frontend Developer</span> · Estudiante DAW
+          <h2 class="agent-role">
+            ROLE · <span class="rol">Frontend Developer</span>
           </h2>
 
           <p class="hero-desc">
-            Diseño y desarrollo interfaces web modernas, responsive y centradas
-            en la experiencia de usuario.
+            Diseño interfaces web interactivas y visuales,
+            inspiradas en experiencias digitales modernas.
           </p>
 
+          <p class="hero-tech-label">ABILITIES</p>
           <p class="hero-tech">
-            HTML · CSS · Grid · Flexbox · JavaScript
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+            <span class="tech">Grid</span>
+            <span class="tech">Flexbox</span>
+            <span class="tech">JavaScript</span>
           </p>
 
-          <a href="#portfolio" class="boton">Ver proyectos</a>
+          <a href="#portfolio" class="boton">View Match History</a>
         </div>
 
         <div class="hero-foto">
@@ -46,53 +52,74 @@
     </div>
   </header>
 
-  <!-- CONTENIDO -->
+  <!-- MAIN CONTENT -->
   <main class="contenedor">
 
+    <!-- AGENT INFO -->
     <section class="card sobre-mi">
-      <h2>Sobre mí</h2>
+      <h2>Agent Info</h2>
 
       <p class="intro">
-<p class="intro">
-  Desarrolladora frontend en formación, enfocada en diseño web y experiencia de usuario.
-</p>
+        Frontend developer en formación especializada en diseño de interfaces.
       </p>
 
       <p>
         Me dedico al diseño y desarrollo de interfaces web modernas, responsive y centradas
-        en la experiencia de usuario. Trabajo principalmente con HTML, CSS y JavaScript,
-        aplicando buenas prácticas de maquetación y usabilidad.
+        en la experiencia de usuario, cuidando tanto la parte visual como la funcional.
       </p>
 
       <p>
-        Busco seguir aprendiendo y creciendo profesionalmente en el ámbito del desarrollo
-        web, aportando creatividad, orden y atención al detalle en cada proyecto.
+        Busco seguir aprendiendo y evolucionando como desarrolladora frontend,
+        aportando creatividad, orden y atención al detalle en cada proyecto.
       </p>
     </section>
 
+    <!-- MATCH HISTORY -->
     <section class="card" id="portfolio">
-      <h2>Portafolio</h2>
+      <h2>Match History</h2>
+
       <ul>
-        <li><a href="https://interficiesyuliana.netlify.app/" target="_blank">Diseño de carousel con buena usabilidad</a></li>
-        <li><a href="https://yulianaclock.netlify.app/" target="_blank">Interfaz de una app tipo reloj</a></li>
-        <li><a href="https://yulianabaquelayout.netlify.app/" target="_blank">Layout responsive con Flexbox</a></li>
-        <li><a href="https://yulianabaquegrid.netlify.app/" target="_blank">Layout responsive con Grid</a></li>
+        <li>
+          <a href="https://interficiesyuliana.netlify.app/" target="_blank">
+            Carousel UI · Usabilidad y accesibilidad
+          </a>
+        </li>
+        <li>
+          <a href="https://yulianaclock.netlify.app/" target="_blank">
+            Clock App · Interfaz interactiva
+          </a>
+        </li>
+        <li>
+          <a href="https://yulianabaquelayout.netlify.app/" target="_blank">
+            Responsive Layout · Flexbox
+          </a>
+        </li>
+        <li>
+          <a href="https://yulianabaquegrid.netlify.app/" target="_blank">
+            Responsive Layout · CSS Grid
+          </a>
+        </li>
       </ul>
     </section>
 
+    <!-- LOADOUT / CV -->
     <section class="card cv">
-      <h2>Currículum</h2>
-      <p>Estudiante de Desarrollo de Aplicaciones Web con interés en el diseño web y el desarrollo frontend.</p>
+      <h2>Loadout</h2>
 
-      <button class="boton" id="toggleCV">Mostrar detalles</button>
+      <p>
+        Estudiante de Desarrollo de Aplicaciones Web con interés en diseño web
+        y desarrollo frontend.
+      </p>
+
+      <button class="boton" id="toggleCV">Equip Loadout</button>
 
       <div id="cvDetalles" class="oculto">
-        <h3>Formación</h3>
+        <h3>Training</h3>
         <ul>
           <li>CFGS Desarrollo de Aplicaciones Web (DAW) – En curso</li>
         </ul>
 
-        <h3>Competencias</h3>
+        <h3>Skills</h3>
         <ul>
           <li>HTML5 y CSS3</li>
           <li>Diseño responsive</li>
@@ -102,8 +129,9 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="card">
-      <h2>Contacto</h2>
+      <h2>Send Message</h2>
 
       <form class="form-contacto">
         <label>
@@ -121,14 +149,15 @@
           <textarea rows="4" required></textarea>
         </label>
 
-        <button class="boton" type="submit">Enviar</button>
+        <button class="boton" type="submit">Transmit</button>
       </form>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    © 2025 · Giuliana Baque
+    SYSTEM ONLINE · 2025 · Giuliana Baque
   </footer>
 
   <script>
@@ -138,10 +167,11 @@
     boton.addEventListener("click", () => {
       detalles.classList.toggle("oculto");
       boton.textContent = detalles.classList.contains("oculto")
-        ? "Mostrar detalles"
-        : "Ocultar detalles";
+        ? "Equip Loadout"
+        : "Unequip Loadout";
     });
   </script>
+  
 
 </body>
 </html>

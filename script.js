@@ -10,3 +10,5 @@ boton.addEventListener("click", () => {
     boton.textContent = "Ocultar detalles";
   }
 });
+
+
