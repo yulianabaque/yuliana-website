@@ -13,8 +13,8 @@
 </head>
 
 <body>
-
-  <!-- HERO / AGENT SCREEN -->
+  <div id="muzzle-flash"></div>
+  <div id="crosshair"></div>
   <header class="hero">
     <div class="hero-caja">
       <div class="hero-contenido">
@@ -52,10 +52,7 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main class="contenedor">
-
-    <!-- AGENT INFO -->
     <section class="card sobre-mi">
       <h2>Agent Info</h2>
 
@@ -75,54 +72,58 @@
     </section>
 
   <section class="card" id="portfolio">
-  <h2>Portfolio</h2>
+    <h2>Portfolio</h2>
 
-  <div class="portfolio-grid">
+    <div class="portfolio-grid">
 
-    <article class="portfolio-item">
-      <img src="img/valo1.png" alt="Proyecto Carousel UI">
+      <a href="https://interficiesyuliana.netlify.app/" target="_blank" class="portfolio-item main-project">
 
-      <h3>Carousel UI</h3>
-      <p>
-        Diseño de un carousel accesible y usable, centrado en la experiencia
-        de usuario.
-      </p>
+       <div class="portfolio-img"> <img src="img/valo1.png" alt="Carousel UI"></div>
 
-      <a href="https://interficiesyuliana.netlify.app/" target="_blank">
-        Ver proyecto
+
+        <h3>Carousel UI</h3>
+
+        <p>
+          Diseño de un carousel accesible y usable, centrado en la experiencia
+          de usuario.
+        </p>
+
+        <span class="ver-proyecto">Ver proyecto</span>
       </a>
-    </article>
 
-    <article class="portfolio-item">
-      <img src="img/valo2.png" alt="Proyecto Clock App">
+      <a href="https://yulianaclock.netlify.app/"
+        target="_blank"
+        class="portfolio-item main-project">
 
-      <h3>Clock App</h3>
-      <p>
-        Interfaz interactiva tipo reloj con diseño responsive y animaciones.
-      </p>
+       <div class="portfolio-img"> <img src="img/valo2.png" alt="Carousel UI"></div>
 
-      <a href="https://yulianaclock.netlify.app/" target="_blank">
-        Ver proyecto
+        <h3>Clock App</h3>
+
+        <p>
+          Interfaz interactiva tipo reloj con diseño responsive y animaciones.
+        </p>
+
+        <span class="ver-proyecto">Ver proyecto</span>
       </a>
-    </article>
 
-    <article class="portfolio-item">
-      <img src="img/valo3.png" alt="Proyecto Flexbox Layout">
+      <a href="https://yulianabaquelayout.netlify.app/"
+        target="_blank"
+        class="portfolio-item main-project">
 
-      <h3>Flexbox Layout</h3>
-      <p>
-        Maquetación responsive utilizando Flexbox y buenas prácticas CSS.
-      </p>
+       <div class="portfolio-img"> <img src="img/valo3.png" alt="Carousel UI"></div>
 
-      <a href="https://yulianabaquelayout.netlify.app/" target="_blank">
-        Ver proyecto
+        <h3>Flexbox Layout</h3>
+
+        <p>
+          Maquetación responsive utilizando Flexbox y buenas prácticas CSS.
+        </p>
+
+        <span class="ver-proyecto">Ver proyecto</span>
       </a>
-    </article>
-  </div>
-</section>
 
+    </div>
+  </section>
 
-    <!-- LOADOUT / CV -->
     <section class="card cv">
       <h2>Loadout</h2>
 
@@ -180,18 +181,7 @@
     SYSTEM ONLINE · 2025 · Giuliana Baque
   </footer>
 
-  <script>
-    const boton = document.getElementById("toggleCV");
-    const detalles = document.getElementById("cvDetalles");
-
-    boton.addEventListener("click", () => {
-      detalles.classList.toggle("oculto");
-      boton.textContent = detalles.classList.contains("oculto")
-        ? "Equip Loadout"
-        : "Unequip Loadout";
-    });
-  </script>
-  
+<script src="script.js" defer></script>
 
 </body>
 </html>
